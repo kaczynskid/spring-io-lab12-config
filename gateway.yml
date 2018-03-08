@@ -1,0 +1,14 @@
+server:
+  port: 9999
+
+zuul:
+  ignored-services: "*"
+  routes:
+    items:
+      serviceId: "warehouse"
+      path: "/items/**"
+      stripPrefix: false
+    baskets:
+      serviceId: "store"
+      path: "/baskets/**"
+      stripPrefix: false
