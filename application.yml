@@ -1,0 +1,17 @@
+common:
+  property: common value
+some:
+  property: common value
+
+management:
+  security:
+    enabled: false
+
+graphite:
+  enabled: false
+  host: 172.17.0.1
+  port: 2003
+
+feign:
+  hystrix:
+    enabled: true
