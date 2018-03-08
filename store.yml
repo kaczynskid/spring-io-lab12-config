@@ -9,7 +9,3 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-
-management:
-  security:
-    enabled: false
