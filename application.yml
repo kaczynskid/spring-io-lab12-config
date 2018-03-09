@@ -15,3 +15,13 @@ graphite:
 feign:
   hystrix:
     enabled: true
+
+spring:
+  zipkin:
+    baseUrl: "http://tracer/"
+  sleuth:
+    sampler:
+      percentage: 1.0
+    log:
+      json:
+        enabled: true
